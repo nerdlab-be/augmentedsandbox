@@ -30,6 +30,8 @@ for i = 1:stepSize:N(1)-(gridSize+1)
     k=k+1;
     l=1;
 end %i
+mountain = mountain/max(mountain(:));
+water = water/max(water(:));
 
 figure; surf(mountain,'edgecolor', 'none');
 figure; surf(water,'edgecolor', 'none');
