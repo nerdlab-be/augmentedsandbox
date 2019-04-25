@@ -35,3 +35,7 @@ water = water/max(water(:));
 
 figure; surf(mountain,'edgecolor', 'none');
 figure; surf(water,'edgecolor', 'none');
+
+%% Save to numpy
+mat2np(mountain,'mountainEurope15_15.pkl','float64');
+mat2np(water, 'waterEurope15_15.pkl', 'float64');
