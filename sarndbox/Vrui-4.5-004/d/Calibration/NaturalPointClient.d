@@ -1,0 +1,21 @@
+$(OBJDIR)/Calibration/NaturalPointClient.o: \
+ Calibration/NaturalPointClient.cpp  \
+ Calibration/NaturalPointClient.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Thread.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/MutexCond.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Time.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Config.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/TripleBuffer.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/SizedTypes.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Atomic.h \
+ /home/nerdlab/src/Vrui-4.5-004/Comm/UDPSocket.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Point.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/ComponentArray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Vector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Rotation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HVector.h \
+ Calibration/PacketBuffer.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Endianness.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ThrowStdErr.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/FunctionCalls.h

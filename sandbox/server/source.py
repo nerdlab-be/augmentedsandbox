@@ -17,7 +17,7 @@ class HeightSource(FileSystemEventHandler):
         return callback
 
 
-    def _load_heightmap(self):
+    def _load_heightmap(self) -> np.matrix:
         with open(self._filename, mode="rb") as f:
             data = struct.unpack('f'*307200, f.read(32*307200))
         #Convert to matrix
@@ -44,5 +44,5 @@ class HeightSource(FileSystemEventHandler):
         observer.start()
 
     @property
-    def heightmap(self):
+    def heightmap(self) -> np.matrix:
         return self._heightmap

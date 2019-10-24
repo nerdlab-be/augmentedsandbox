@@ -1,0 +1,24 @@
+$(OBJDIR)/Vrui/Internal/ImageSequenceMovieSaver.o: \
+ Vrui/Internal/ImageSequenceMovieSaver.cpp  \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Internal/ImageSequenceMovieSaver.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/MutexCond.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Time.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Config.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Thread.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Internal/MovieSaver.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/TripleBuffer.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/SizedTypes.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Atomic.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ThrowStdErr.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StandardValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ValueCoder.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StringMarshaller.h \
+ /home/nerdlab/src/Vrui-4.5-004/Images/WriteImageFile.h \
+ /home/nerdlab/src/Vrui-4.5-004/Images/RGBImage.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Images/Image.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLScalarLimits.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLColor.h \
+ /home/nerdlab/src/Vrui-4.5-004/Images/BaseImage.h

@@ -1,0 +1,31 @@
+$(OBJDIR)/Geometry/GeoCoordinateSystem.o: \
+ Geometry/GeoCoordinateSystem.cpp  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/GeoCoordinateSystem.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Autopointer.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/RefCounted.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Atomic.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Config.h \
+ /home/nerdlab/src/Vrui-4.5-004/IO/Directory.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/FileTests.h \
+ /home/nerdlab/src/Vrui-4.5-004/IO/File.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Endianness.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Point.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/ComponentArray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Vector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Box.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Ray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/SolidHitResult.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HitResult.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Constants.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/SelfDestructPointer.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ThrowStdErr.h \
+ /home/nerdlab/src/Vrui-4.5-004/IO/ValueSource.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Geoid.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Matrix.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HVector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Rotation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/OrthonormalTransformation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/AlbersEqualAreaProjection.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/LambertConformalProjection.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/TransverseMercatorProjection.h

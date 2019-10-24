@@ -1,0 +1,36 @@
+$(OBJDIR)/Vrui/Internal/UIManagerPlanar.o: \
+ Vrui/Internal/UIManagerPlanar.cpp  \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Internal/UIManagerPlanar.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Rotation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Vector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/ComponentArray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Point.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HVector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Plane.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Matrix.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Ray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/SolidHitResult.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HitResult.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Constants.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/UIManager.h \
+ /home/nerdlab/src/Vrui-4.5-004/GLMotif/WidgetArranger.h \
+ /home/nerdlab/src/Vrui-4.5-004/GLMotif/Types.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLColor.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLScalarLimits.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLVector.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLBox.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Geometry.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StandardValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ValueCoder.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StringMarshaller.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/OrthonormalTransformation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/OrthogonalTransformation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/GeometryValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/GLMotif/Widget.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Vrui.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackData.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/InputDevice.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackList.h

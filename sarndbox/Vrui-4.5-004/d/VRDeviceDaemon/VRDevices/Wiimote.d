@@ -1,0 +1,24 @@
+$(OBJDIR)/VRDeviceDaemon/VRDevices/Wiimote.o: \
+ VRDeviceDaemon/VRDevices/Wiimote.cpp  \
+ /home/nerdlab/src/Vrui-4.5-004/VRDeviceDaemon/VRDevices/Wiimote.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackData.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackList.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Mutex.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Config.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Cond.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/Time.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/MutexCond.h \
+ /home/nerdlab/src/Vrui-4.5-004/Threads/Thread.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/BrokenLine.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Vector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/ComponentArray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ThrowStdErr.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StandardValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ValueCoder.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CompoundValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CompoundValueCoders.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StringMarshaller.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/MathValueCoders.h

@@ -1,0 +1,35 @@
+$(OBJDIR)/Vrui/Tools/SixDofInputDeviceTool.o: \
+ Vrui/Tools/SixDofInputDeviceTool.cpp  \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Tools/SixDofInputDeviceTool.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/OrthonormalTransformation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Vector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Math/Math.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/ComponentArray.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Point.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/HVector.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Rotation.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Matrix.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/InputDeviceTool.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Geometry.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/UserInterfaceTool.h \
+ /home/nerdlab/src/Vrui-4.5-004/Geometry/Ray.h  \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLColor.h \
+ /home/nerdlab/src/Vrui-4.5-004/GL/GLScalarLimits.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/Tool.h  \
+ /home/nerdlab/src/Vrui-4.5-004/Plugins/Factory.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/InputDevice.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackList.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/CallbackData.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/ToolInputLayout.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/ToolInputAssignment.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StandardValueCoders.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ValueCoder.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ConfigurationFile.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/StringMarshaller.h \
+ /home/nerdlab/src/Vrui-4.5-004/Vrui/ToolManager.h \
+ /home/nerdlab/src/Vrui-4.5-004/Plugins/FactoryManager.h \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/FileLocator.h \
+ /home/nerdlab/src/Vrui-4.5-004/Plugins/FactoryManager.icpp \
+ /home/nerdlab/src/Vrui-4.5-004/Misc/ThrowStdErr.h \
+ /home/nerdlab/src/Vrui-4.5-004/Plugins/FunctionPointerHack.h

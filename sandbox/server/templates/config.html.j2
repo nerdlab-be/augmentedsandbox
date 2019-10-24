@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandbox config</title>
+    <link rel="stylesheet" href="{{ url_for('.static', filename='croppr.min.css') }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <style>
+      body {
+        margin: 1em;
+      }
+
+      .controls {
+        margin-top: .5em;
+      }
+
+      .heightmap-container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="settings">
+      <h2>Raw heightmap</h2>
+      <div class="heightmap-container">
+        <img id="heightmap" src="{{ url_for('.raw_normalized_height') }}">
+        <pre class="config">{{ options | tojson }}</pre>
+      </div>
+      <div class="controls">
+        <button id="set-max-height">Calibrate maximum height</button>
+        <button id="set-min-height">Calibrate minimum height</button>
+      </div>
+    </section>
+    <img id="cropped-heightmap" src="{{ url_for('.height', format='png', cropped='true') }}">
+    <script src="{{ url_for('.static', filename='croppr.min.js') }}"></script>
+    <script>
+      let options = {{ options | tojson }};
+      const bustCroppedCache = () => {
+        const el = document.querySelector('#cropped-heightmap');
+        el.src = `${el.src}&${new Date().getTime()}`;
+      };
+      const optionsElement = document.querySelector('.config');
+      const updateOptions = updates => {
+        options = {...options, ...updates};
+        optionsElement.innerHTML = JSON.stringify(options);
+        bustCroppedCache();
+      };
+
+      window.onload = () => {
+        const croppr = new Croppr('#heightmap', {
+          async onCropEnd({x, y, width, height}) {
+            const left = x;
+            const top = y;
+            const right = left + width;
+            const bottom = top + height;
+            const config = { left, right, bottom, top };
+            const response = await fetch('/config', { method: 'PUT', body: JSON.stringify(config) });
+            updateOptions(await response.json());
+          },
+        });
+        croppr.resizeTo(options.right - options.left, options.bottom - options.top);
+        croppr.moveTo(options.left, options.top);
+      };
+
+      const minHeightButton = document.querySelector('#set-min-height');
+      const maxHeightButton = document.querySelector('#set-max-height');
+
+      minHeightButton.addEventListener('click', async () => {
+        const response = await fetch('/config/min-depth', { method: 'PUT'});
+        updateOptions(await response.json());
+      });
+
+      maxHeightButton.addEventListener('click', async () => {
+        const response = await fetch('/config/max-depth', { method: 'PUT'});
+        updateOptions(await response.json());
+      });
+    </script>
+  </body>
+</html>
