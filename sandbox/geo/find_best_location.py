@@ -1,11 +1,11 @@
-from  europe import Europe
-import mapfeatures
+from .europe import Europe
+import sandbox.geo.mapfeatures as mapfeatures
 
 import struct
 import numpy as np
 import matplotlib.pyplot as plt
 
-class Find_best_location():
+class FindBestLocation():
   def __init__(self, file_name, filter_param, box_shape, resolution):
       """
       Find_best_location constructor
@@ -133,7 +133,7 @@ class Find_best_location():
 
 
 if __name__ == '__main__':
-  fbl = Find_best_location('height.np', 50, [3, 4], 25)
+  fbl = FindBestLocation('height.np', 50, [3, 4], 25)
   
   with open('height-montblanc.dat', mode="rb") as fn:
     data = struct.unpack('f'*307200, fn.read(1228800))

@@ -4,7 +4,7 @@ import pickle as pcl
 from scipy.ndimage import gaussian_filter as gaussf
 import numpy as np
 
-import mapfeatures
+import sandbox.geo.mapfeatures as mapfeatures
 
 class Europe:
   def __init__(self, file_name, filter_param, box_shape, resolution):

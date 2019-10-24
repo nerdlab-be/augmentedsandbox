@@ -10,18 +10,20 @@ from PIL import Image
 
 from sandbox.server.source import HeightSource
 from sandbox.geo import GeoData
+from sandbox.geo.find_best_location import FindBestLocation
 
 app = Flask(__name__)
 source = HeightSource()
 geo_data = GeoData()
 default_options = dict(
-    top=0,  # includive
+    top=0,  # inclusive
     left=0,  # inclusive
     bottom=480,  # exclusive
     right=640,  # exclusive
     min_depth=-791.5076293945312,
     max_depth=-709.21630859375,
 )
+location_seeker = FindBestLocation('data/height.np', 50, [3, 4], 25)
 
 
 def load_options() -> Dict[str, Any]:
@@ -105,15 +107,16 @@ def map():
 
 @app.route('/location')
 def location():
-    cropped_matrix = crop_matrix(source.heightmap)
-    max_depth = np.max(cropped_matrix)
-    min_depth = np.min(cropped_matrix)
-    depth_range = max_depth - min_depth
-    # this always normalizes the heights to [0, 1], with the minimum value mapped to 0
-    # and the maximum value mapped to 1. This makes a relatively flat terrain extremely
-    # rugged, so this should change at some point.
-    normalized_matrix = (cropped_matrix - min_depth) / depth_range
-    raw_x, raw_y = geo_data.find_best_match(normalized_matrix)
+    # cropped_matrix = crop_matrix(source.heightmap)
+    # max_depth = np.max(cropped_matrix)
+    # min_depth = np.min(cropped_matrix)
+    # depth_range = max_depth - min_depth
+    # # this always normalizes the heights to [0, 1], with the minimum value mapped to 0
+    # # and the maximum value mapped to 1. This makes a relatively flat terrain extremely
+    # # rugged, so this should change at some point.
+    # normalized_matrix = (cropped_matrix - min_depth) / depth_range
+    # raw_x, raw_y = geo_data.find_best_match(normalized_matrix)
+    raw_x, raw_y = location_seeker.get_coordinates(source.heightmap)
     return json.dumps(tuple(reversed(geo_data.pixels_to_coordinates((raw_x * 15, raw_y * 15)))))
 
 

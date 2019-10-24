@@ -4,3 +4,5 @@ __pycache__
 height.dat
 config.json
 env3
+*.whl
+.vscode
