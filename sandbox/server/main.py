@@ -7,6 +7,7 @@ from typing import Dict, Any
 import numpy as np
 from flask import Flask, send_file, Response, render_template, request
 from PIL import Image
+from random import randrange
 
 from sandbox.server.source import HeightSource
 from sandbox.geo import GeoData
@@ -144,4 +145,4 @@ def config_max_depth():
     return json.dumps(updated_options)
 
 source.run()
-app.run("0.0.0.0", debug=True)
+app.run("0.0.0.0", debug=False)

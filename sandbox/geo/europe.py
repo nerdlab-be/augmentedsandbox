@@ -19,11 +19,14 @@ class Europe:
     '''
     self.file_name = file_name
     self.filter_param = filter_param
+    print('Wait.. Reading map  of Europe.')
     self.data = self.read_map()
     self.box_shape = box_shape[0], box_shape[1]
     self.resolution = resolution # in km
+    print('Wait.. Europe map is being processed. This can take several seconds.')
     self.R, self.theta = self.vector_analysis()
     self.tuple_eur = (self.R, self.theta)
+    print('Europe map is processed.')
 
   def read_map(self):
     '''read image from binary file, called file_name, and filter with gaussian filter with filter_param'''
@@ -70,4 +73,4 @@ class Europe:
     
 if __name__ == '__main__':
   eur = Europe('height.np', 50, [3, 4], 25)
-  print(len(eur.R))
+  # print(len(eur.R))

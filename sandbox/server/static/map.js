@@ -11,4 +11,4 @@ const updateView = async () => {
   map.flyTo(coordinates, 8);
 };
 
-setInterval(updateView, 5000);
+setInterval(updateView, 10000);

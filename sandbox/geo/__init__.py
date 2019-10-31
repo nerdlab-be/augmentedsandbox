@@ -48,10 +48,10 @@ class GeoData:
         self._water_data = self._load_tiff(self._water_path, '_raw_water_data')
         # with open(self._processed_height_path, 'rb') as f:
         #     self._processed_height_data = pickle.load(f).transpose()
-        print('Processing data')
-        print(self._raw_height_data.shape)
+        # print('Processing data')
+        # print(self._raw_height_data.shape)
         # self._processed_height_data = self._get_processed_height_values(self._raw_height_data, 327, 283)
-        print('Done processing data')
+        # print('Done processing data')
 
     def pixels_to_coordinates(self, coords: Tuple[int, int]) -> Tuple[float, float]:
         x, y = coords

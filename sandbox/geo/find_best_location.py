@@ -16,12 +16,13 @@ class FindBestLocation():
       box_shape [tuple of two ints]: number of squares in (x,y) direction
       resolution [int]: the resolution of one box in km
       """
+
       self.europe = Europe(file_name, filter_param, box_shape, resolution)
       self.current_sandbox = []
       self.sandbox_size = None
       self.box_shape = box_shape
 
-  def get_coordinates(self, new_map):
+  def get_coordinates(self, new_map) -> tuple:
     """
     Process sandbox data
 
@@ -52,7 +53,7 @@ class FindBestLocation():
     """
     return mapfeatures.process_window(data, self.box_shape)
 
-  def correlate_sandbox(self, tuple_sb, tuple_eur, plot=False):
+  def correlate_sandbox(self, tuple_sb, tuple_eur, plot=False) -> tuple:
     """Looks for the best match between the tuple of the sandbox and all Europe tuples.
     
     Parameters:
@@ -147,4 +148,4 @@ if __name__ == '__main__':
   shape = (x_size, y_size)
   matrix = np.reshape(arr, shape)
   matrix = matrix[60:-50, 60:-80]
-  print(fbl.get_coordinates(matrix))
+  # print(fbl.get_coordinates(matrix))
