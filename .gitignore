@@ -5,4 +5,12 @@ height.dat
 config.json
 env3
 *.whl
+*.d
+*.so
+Config.h
 .vscode
+sarndbox/Kinect-3.6/lib/x86_64-linux-gnu/Vislets/
+sarndbox/Kinect-3.6/o/
+sarndbox/SARndbox-2.5/o/
+sarndbox/Vrui-4.5-0*/lib/
+sarndbox/Vrui-4.5-0*/o/
