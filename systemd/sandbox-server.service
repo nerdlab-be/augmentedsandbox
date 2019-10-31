@@ -1,0 +1,11 @@
+[Unit]
+Description=Sandbox server
+
+[Service]
+Type=simple
+WorkingDirectory=/home/nerdlab/augmentedsandbox
+User=nerdlab
+ExecStart=/home/nerdlab/augmentedsandbox/venv/bin/python -m sandbox.server.main
+
+[Install]
+WantedBy=multi-user.target

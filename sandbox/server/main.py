@@ -3,6 +3,7 @@ import json
 import random
 from enum import Enum
 from typing import Dict, Any
+import sys
 
 import numpy as np
 from flask import Flask, send_file, Response, render_template, request
@@ -14,7 +15,7 @@ from sandbox.geo import GeoData
 from sandbox.geo.find_best_location import FindBestLocation
 
 app = Flask(__name__)
-source = HeightSource()
+source = HeightSource(sys.argv[1])
 geo_data = GeoData()
 default_options = dict(
     top=0,  # inclusive

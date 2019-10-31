@@ -3,7 +3,7 @@ import sandbox.geo.mapfeatures as mapfeatures
 
 import struct
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 class FindBestLocation():
   def __init__(self, file_name, filter_param, box_shape, resolution):
@@ -95,9 +95,9 @@ class FindBestLocation():
     best_pos_shaped = np.unravel_index(position_best, shape)
 
     # Plot visuals
-    if plot:
-      plt.imshow(np.reshape(cost_all, (shape[0] - self.box_shape[0] + 1, shape[1] - self.box_shape[1] + 1)))
-      plt.show()
+    # if plot:
+    #   plt.imshow(np.reshape(cost_all, (shape[0] - self.box_shape[0] + 1, shape[1] - self.box_shape[1] + 1)))
+    #   plt.show()
 
     return best_pos_shaped
 
