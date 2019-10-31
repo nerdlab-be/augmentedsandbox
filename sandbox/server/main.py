@@ -118,9 +118,9 @@ def location():
     # # rugged, so this should change at some point.
     # normalized_matrix = (cropped_matrix - min_depth) / depth_range
     # raw_x, raw_y = geo_data.find_best_match(normalized_matrix)
-    print('Begin')
+    print('Begin', file=sys.stderr)
     raw_x, raw_y = location_seeker.get_coordinates(source.heightmap)
-    print('End')
+    print('End', file=sys.stderr)
     return json.dumps(tuple(reversed(geo_data.pixels_to_coordinates((raw_x * 15, raw_y * 15)))))
 
 
