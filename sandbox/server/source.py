@@ -24,7 +24,7 @@ class HeightSource(FileSystemEventHandler):
         x_size = 480
         y_size = 640
         lst = list(data)
-        arr = -np.asarray(lst)
+        arr = np.asarray(lst)
         shape = (x_size, y_size)
         matrix = np.reshape(arr, shape)
         x_resize = x_size
