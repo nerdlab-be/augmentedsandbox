@@ -1,5 +1,6 @@
 import struct
 import sys
+import os
 
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -33,8 +34,8 @@ class HeightSource(FileSystemEventHandler):
         return matrix_resize
 
     def on_modified(self, event):
-        print('Loading heightmap', file=sys.stderr)
-        if self._filename in event.src_path:
+        if os.path.basename(self._filename) in event.src_path:
+            print('Loading heightmap', file=sys.stderr)
             self._heightmap = self._load_heightmap()
             for callback in self._callbacks:
                 callback(self._heightmap)
