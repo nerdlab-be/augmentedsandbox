@@ -117,10 +117,10 @@ class FindBestLocation():
     # Loop through the fraction of europe and calculate the vector cost
     for i in range(1, len(r_eur)):
       # Check if the location is just sea and nothing else. Do not take this position.
-      if (np.sum(r_eur[i]) == 0):
+      if (np.sum(r_eur) == 0):
         cost.append(20)
       else:
-        cost_zeros = (len([r == 0 for r in r_eur[i] if r == 0])) * 5
+        cost_zeros = (len([r == 0 for r in r_eur if r == 0])) * 5
         (x1, y1) = (np.cos(th_eur[i])*r_eur[i], np.sin(th_eur[i])*r_eur[i])
         (x2, y2) = (np.cos(th_sb[i])*r_sb[i], np.sin(th_sb[i])*r_sb[i])
         cost.append(np.sqrt(((y2 - y1)**2 + (x2 - x1)**2)) + cost_zeros) 
