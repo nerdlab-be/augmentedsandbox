@@ -1,4 +1,5 @@
 import struct
+import sys
 
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -16,7 +17,6 @@ class HeightSource(FileSystemEventHandler):
         self._callbacks.append(callback)
         return callback
 
-
     def _load_heightmap(self) -> np.matrix:
         with open(self._filename, mode="rb") as f:
             data = struct.unpack('f'*307200, f.read(32*307200))
@@ -33,6 +33,7 @@ class HeightSource(FileSystemEventHandler):
         return matrix_resize
 
     def on_modified(self, event):
+        print('Loading heightmap', file=sys.stderr)
         if self._filename in event.src_path:
             self._heightmap = self._load_heightmap()
             for callback in self._callbacks:
