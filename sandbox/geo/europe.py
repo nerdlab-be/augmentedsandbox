@@ -72,5 +72,8 @@ class Europe:
 
     
 if __name__ == '__main__':
-  eur = Europe('height.np', 50, [3, 4], 25)
+  eur = Europe('data/height.np', 50, [3, 4], 25)
   # print(len(eur.R))
+  # plt.figure()
+  # plt.imshow(eur.data)
+  # plt.show()

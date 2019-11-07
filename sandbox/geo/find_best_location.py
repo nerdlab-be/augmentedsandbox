@@ -99,7 +99,7 @@ class FindBestLocation():
     #   plt.imshow(np.reshape(cost_all, (shape[0] - self.box_shape[0] + 1, shape[1] - self.box_shape[1] + 1)))
     #   plt.show()
 
-    return best_pos_shaped
+    return best_pos_shaped[0]*self.europe.resolution, best_pos_shaped[1]*self.europe.resolution
 
   def vector_substraction(self, th_eur, r_eur, th_sb, r_sb):
     """
