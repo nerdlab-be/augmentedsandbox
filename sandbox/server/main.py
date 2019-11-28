@@ -1,4 +1,5 @@
 from io import BytesIO
+import os
 import json
 import random
 from enum import Enum
@@ -6,7 +7,7 @@ from typing import Dict, Any
 import sys
 
 import numpy as np
-from flask import Flask, send_file, Response, render_template, request
+from flask import Flask, send_file, Response, render_template, request, send_from_directory
 from PIL import Image
 from random import randrange
 
@@ -147,5 +148,5 @@ def config_max_depth():
     updated_options = update_options(dict(max_depth=max_depth))
     return json.dumps(updated_options)
 
-source.run()
+# source.run()
 app.run("0.0.0.0", debug=False)
